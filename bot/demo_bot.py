@@ -24,7 +24,7 @@ API = f"https://api.telegram.org/bot{TOKEN}" if TOKEN else ""
 FAQ = {
     "shipping": "Standard shipping: 5–8 business days in the EU. Express: 2–4 days.",
     "returns": "Unused items can be returned within 30 days in original packaging.",
-    "pricing": "Starter $40–90 · Growth $120–250 · Automation $250–500. Crypto OK.",
+    "pricing": "Starter from $45 · Growth from $109 · Automation from $149. Crypto (USDC) on BNB Chain or Base.",
     "hours": "Support Mon–Fri 09:00–18:00 Europe/Madrid.",
 }
 
@@ -77,7 +77,7 @@ def handle_message(text: str) -> str:
     if low.startswith("/clean"):
         return (
             "Spreadsheet cleanup package: dedupe, fix types, fill gaps, "
-            "summary dashboard. From $35. Send your sheet for a free 100-row sample."
+            "summary dashboard. From $45. Send your sheet to get started."
         )
     return "Unknown command. Try /help"
 
