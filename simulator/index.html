@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Telegram bot simulator — Nyyo Automation</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <span class="tag">Browser simulator · no Telegram account needed</span>
+      <h1>Telegram-style demo bot</h1>
+      <p style="margin:0;color:#9aa8c7">Same commands as the Python bot in <code>bot/</code>. Try FAQ and price helpers here.</p>
+    </header>
+    <section class="explainer">
+      <h2>What is this? (plain English)</h2>
+      <p style="margin:0 0 8px;color:#9aa8c7">A chatbot your customers can message on Telegram — for FAQ, order status, or simple tools.</p>
+      <ol>
+        <li>Click a suggested command (or type <code>/help</code>).</li>
+        <li>Read the bot reply — that’s what clients would see in Telegram.</li>
+        <li>Real deployment uses your own @BotFather token (we never store yours in this repo).</li>
+      </ol>
+      <div class="benefit"><strong>Business benefit:</strong> 24/7 answers for common questions; fewer support DMs. Simple bots from <strong>$79</strong>.</div>
+    </section>
+    <div class="chips" id="chips"></div>
+    <div class="phone">
+      <div class="head">Nyyo Demo Bot</div>
+      <div class="msgs" id="msgs"></div>
+      <div class="composer">
+        <input id="q" placeholder="/faq shipping" />
+        <button id="send" type="button">Send</button>
+      </div>
+    </div>
+    <p class="footer"><a href="https://laborx.com/freelancers/users/id475124">Hire Nyyo Automation</a> · <a href="https://github.com/nyyoautomation/nyyo-telegram-demo">Repo</a></p>
+  </div>
+  <script src="./js/bot.js"></script>
+  <script>
+    const msgs = document.getElementById("msgs");
+    const q = document.getElementById("q");
+    const chips = document.getElementById("chips");
+    [" /start","/help","/faq shipping","/faq pricing","/price btc","/clean"].forEach(cmd => {
+      const b = document.createElement("button"); b.textContent = cmd.trim();
+      b.onclick = () => ask(cmd.trim()); chips.appendChild(b);
+    });
+    function add(role, text) {
+      const d = document.createElement("div");
+      d.className = "bubble " + role;
+      d.textContent = text;
+      msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight;
+    }
+    async function ask(text) {
+      add("user", text);
+      const reply = await NyyoDemoBot.handleMessage(text);
+      add("bot", reply);
+    }
+    document.getElementById("send").onclick = () => { ask(q.value); q.value=""; };
+    q.addEventListener("keydown", e => { if (e.key==="Enter"){ ask(q.value); q.value=""; }});
+    ask("/start");
+  </script>
+</body>
+</html>

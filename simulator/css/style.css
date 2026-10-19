@@ -1,0 +1,20 @@
+:root{--bg:#0b1220;--panel:#121a2b;--text:#e8eefc;--muted:#9aa8c7;--accent:#5b8cff;--ok:#3dd6c6;--tg:#229ED9;--border:#243049}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 48px}
+.hero{background:linear-gradient(145deg,#13203a,#0c1628);border:1px solid var(--border);border-radius:16px;padding:22px;margin-bottom:16px}
+.tag{display:inline-block;font-size:.75rem;color:var(--ok);background:rgba(61,214,198,.12);border:1px solid rgba(61,214,198,.35);padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.explainer{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:16px}
+.explainer ol{color:var(--muted);margin:0;padding-left:1.2rem}
+.benefit{margin-top:12px;padding:10px;border-radius:10px;background:rgba(34,158,217,.12);border:1px solid rgba(34,158,217,.35)}
+.phone{background:#0e1621;border:1px solid var(--border);border-radius:18px;overflow:hidden;min-height:480px;display:flex;flex-direction:column}
+.head{background:var(--tg);padding:14px 16px;font-weight:700}
+.msgs{flex:1;padding:14px;overflow-y:auto;max-height:420px}
+.bubble{max-width:85%;padding:10px 12px;border-radius:12px;margin:8px 0;white-space:pre-wrap;line-height:1.4;font-size:.92rem}
+.bubble.user{background:#182533;margin-left:auto}
+.bubble.bot{background:#182533;border:1px solid #243447}
+.composer{display:flex;gap:8px;padding:12px;border-top:1px solid var(--border)}
+.composer input{flex:1;border-radius:10px;border:1px solid var(--border);background:#0b1220;color:var(--text);padding:12px}
+.composer button,.chips button{border:0;border-radius:10px;background:var(--tg);color:#fff;padding:12px 14px;font-weight:600;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.chips button{background:transparent;color:var(--muted);border:1px solid var(--border);font-weight:500;font-size:.85rem}
+.footer{margin-top:16px;text-align:center;color:var(--muted);font-size:.85rem}.footer a{color:var(--ok)}

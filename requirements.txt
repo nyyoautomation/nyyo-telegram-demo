@@ -1,0 +1,1 @@
+# stdlib only for bot/demo_bot.py — no extra deps required
