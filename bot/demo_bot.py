@@ -22,7 +22,7 @@ TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 API = f"https://api.telegram.org/bot{TOKEN}" if TOKEN else ""
 
 FAQ = {
-    "shipping": "Standard shipping: 5–8 business days in the EU. Express: 2–4 days.",
+    "shipping": "Standard shipping: 5–8 business days within the primary region. Express: 2–4 days.",
     "returns": "Unused items can be returned within 30 days in original packaging.",
     "pricing": "Chatbots from $149 · spreadsheet cleanup from $45 · n8n automations from $149. Available on LaborX.",
     "hours": "Support Mon–Fri 09:00–18:00 UTC.",
