@@ -1,8 +1,8 @@
 const FAQ = {
   shipping: "Standard shipping: 5–8 business days in the EU. Express: 2–4 days.",
   returns: "Unused items can be returned within 30 days in original packaging.",
-  pricing: "Bots from $159 · chatbots from $199 · spreadsheet cleanup from $59. Paid in crypto on BNB Chain or Base.",
-  hours: "Support Mon–Fri 09:00–18:00 Europe/Madrid.",
+  pricing: "Chatbots from $149 · spreadsheet cleanup from $45 · n8n automations from $149. Available on LaborX.",
+  hours: "Support Mon–Fri 09:00–18:00 UTC.",
 };
 const HELP =
   "Nyyo demo bot commands:\n/start — welcome\n/help — this list\n/faq <topic> — shipping | returns | pricing | hours\n/price btc|eth|sol — demo USD price\n/clean — spreadsheet cleanup pitch";
@@ -10,7 +10,7 @@ const HELP =
 async function handleMessage(text) {
   const low = (text || "").trim().toLowerCase();
   if (low.startsWith("/start")) {
-    return "Hi — this is a Nyyo Automation demo bot.\nAsk /faq shipping or /price btc.\nHire: https://laborx.com/freelancers/users/id475124";
+    return "Hi — this is a Nyyo Automation demo bot.\nAsk /faq shipping or /price btc.\nAvailable on LaborX: https://github.com/nyyoautomation";
   }
   if (low.startsWith("/help")) return HELP;
   if (low.startsWith("/faq")) {
@@ -30,7 +30,7 @@ async function handleMessage(text) {
     }
   }
   if (low.startsWith("/clean")) {
-    return "Spreadsheet cleanup package: dedupe, fix types, fill gaps, summary dashboard. From $59. Send your sheet for a free 100-row sample.";
+    return "Spreadsheet cleanup package: dedupe, fix types, fill gaps, summary dashboard. From $45. Send your sheet to get started.";
   }
   return "Unknown command. Try /help";
 }

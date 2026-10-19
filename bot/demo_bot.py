@@ -24,8 +24,8 @@ API = f"https://api.telegram.org/bot{TOKEN}" if TOKEN else ""
 FAQ = {
     "shipping": "Standard shipping: 5–8 business days in the EU. Express: 2–4 days.",
     "returns": "Unused items can be returned within 30 days in original packaging.",
-    "pricing": "Starter from $45 · Growth from $109 · Automation from $149. Crypto (USDC) on BNB Chain or Base.",
-    "hours": "Support Mon–Fri 09:00–18:00 Europe/Madrid.",
+    "pricing": "Chatbots from $149 · spreadsheet cleanup from $45 · n8n automations from $149. Available on LaborX.",
+    "hours": "Support Mon–Fri 09:00–18:00 UTC.",
 }
 
 HELP = (
@@ -52,7 +52,7 @@ def handle_message(text: str) -> str:
         return (
             "Hi — this is a **Nyyo Automation** demo bot.\n"
             "Ask /faq shipping or /price btc.\n"
-            "Hire: https://laborx.com/freelancers/users/id475124"
+            "Available on LaborX: https://github.com/nyyoautomation"
         )
     if low.startswith("/help"):
         return HELP
