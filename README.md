@@ -6,7 +6,7 @@
 >
 > **Try it in 1 click (no Telegram account):** open the [**browser simulator**](https://nyyoautomation.github.io/nyyo-telegram-demo/simulator/), click a command, read the reply.
 >
-> **Business benefit:** customers get instant answers 24/7 instead of waiting for email. Simple bots from **$79**.
+> **Business benefit:** customers get instant answers 24/7 instead of waiting for email. Simple bots from **$159**.
 
 ![Demo](docs/demo.gif)
 
@@ -45,7 +45,7 @@ python bot/demo_bot.py
 | | |
 |---|---|
 | **Product** | Custom Telegram / Discord bot (FAQ, alerts, forms) |
-| **From** | **$79–200** |
+| **From** | **$159** |
 | **Includes** | Source · README · 1 revision |
 
 → [Packages & contact](https://github.com/nyyoautomation) · [LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124)
@@ -55,4 +55,4 @@ python bot/demo_bot.py
 1. Open an **issue** with: goal · deadline · budget  
 2. Or message **[LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124)**
 
-Crypto: USDC / SOL / ETH / BTC.
+Crypto: USDC on BNB Chain or Base.

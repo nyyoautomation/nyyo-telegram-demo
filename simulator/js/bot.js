@@ -1,7 +1,7 @@
 const FAQ = {
   shipping: "Standard shipping: 5–8 business days in the EU. Express: 2–4 days.",
   returns: "Unused items can be returned within 30 days in original packaging.",
-  pricing: "Starter $40–90 · Growth $120–250 · Automation $250–500. Crypto OK.",
+  pricing: "Bots from $159 · chatbots from $199 · spreadsheet cleanup from $59. Paid in crypto on BNB Chain or Base.",
   hours: "Support Mon–Fri 09:00–18:00 Europe/Madrid.",
 };
 const HELP =
@@ -30,7 +30,7 @@ async function handleMessage(text) {
     }
   }
   if (low.startsWith("/clean")) {
-    return "Spreadsheet cleanup package: dedupe, fix types, fill gaps, summary dashboard. From $35. Send your sheet for a free 100-row sample.";
+    return "Spreadsheet cleanup package: dedupe, fix types, fill gaps, summary dashboard. From $59. Send your sheet for a free 100-row sample.";
   }
   return "Unknown command. Try /help";
 }
