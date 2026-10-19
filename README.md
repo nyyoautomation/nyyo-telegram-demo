@@ -56,11 +56,3 @@ python bot/demo_bot.py
 2. Or message **[LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124)**
 
 Crypto: USDC / SOL / ETH / BTC.
-
-<details>
-<summary>🇫🇷 Français</summary>
-
-**Bot Telegram démo.** Essayez le [simulateur navigateur](https://cdn.jsdelivr.net/gh/nyyoautomation/nyyo-telegram-demo@main/simulator/index.html) (pas besoin de compte Telegram).  
-Bénéfice : réponses automatiques 24/7. Prestation à partir de **79 $**. Token BotFather = à vous, jamais dans le dépôt.
-
-</details>
