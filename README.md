@@ -4,13 +4,13 @@
 >
 > **What it does:** A Telegram bot that answers common questions (/faq), shows a public price (/price), and explains a service (/clean).
 >
-> **Try it in 1 click (no Telegram account):** open the [**browser simulator**](https://cdn.jsdelivr.net/gh/nyyoautomation/nyyo-telegram-demo@main/simulator/index.html), click a command, read the reply.
+> **Try it in 1 click (no Telegram account):** open the [**browser simulator**](https://nyyoautomation.github.io/nyyo-telegram-demo/simulator/), click a command, read the reply.
 >
 > **Business benefit:** customers get instant answers 24/7 instead of waiting for email. Simple bots from **$79**.
 
 ![Demo](docs/demo.gif)
 
-**Simulator (live):** https://cdn.jsdelivr.net/gh/nyyoautomation/nyyo-telegram-demo@main/simulator/index.html  
+**Simulator (live):** https://nyyoautomation.github.io/nyyo-telegram-demo/simulator/  
 **Brand:** [Nyyo Automation](https://github.com/nyyoautomation)
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](#)
